@@ -1,4 +1,4 @@
-Docuemntación Instalación del Proyecto.
+Documentación Instalación del Proyecto.
 =======================================
 Para la instalación de Tryton verificar la documentación oficial en:
 http://doc.tryton.org/3.0/tryton/doc/installation.html
