@@ -20,5 +20,6 @@ Introducción:
     instalacion.rst
     entendiendo.rst
     puesta-en-marcha.rst
+    entidades.rst
     facturacion.rst
     gestion-coop.rst
