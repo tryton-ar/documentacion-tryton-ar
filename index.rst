@@ -21,5 +21,10 @@ Introducción:
     entendiendo.rst
     puesta-en-marcha.rst
     entidades.rst
+    productos.rst
+    inventarios.rst
+    contabilidad.rst
     facturacion.rst
+    compras.rst
+    ventas.rst
     gestion-coop.rst
