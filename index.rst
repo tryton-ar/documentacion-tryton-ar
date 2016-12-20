@@ -27,4 +27,5 @@ Introducción:
     facturacion.rst
     compras.rst
     ventas.rst
+    contratos.rst
     gestion-coop.rst
