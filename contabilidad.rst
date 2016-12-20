@@ -3,12 +3,12 @@ Contabilidad
 
 
 Planes Contables:
---------------​--
+----------------
 En construcción
 
 
 Ejecicio Fiscal:
---------------​--
+----------------
 Ver Puesta en Marcha
 
 Diarios:
