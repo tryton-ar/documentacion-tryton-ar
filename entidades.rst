@@ -26,4 +26,7 @@ Desde el símbolo que es una flecha (ver imagen) se puede acceder a los registro
 Tryton maneja un completo árbol de categorías para poder realizar una correcta segmentación de los registros. 
 Al igual que en otros módulos se pueden realizar búsquedas por distintos filtros y extraer de forma sencilla los resultados de una búsqueda (copiar y pegar listado en una planilla de cálculo). 
 
+Validar Datos en AFIP
+---------------------
 
+Se realizó la integración con el servicio de la AFIP que permite traer datos de la Entidad de forma automática. Al poner el número de CUIT y presionar el botón AFIP el sistema consulta en el momento el webservices de la AFIP y trae los datos que la misma informa.  
