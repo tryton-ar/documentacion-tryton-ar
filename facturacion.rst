@@ -32,6 +32,8 @@ Si el usuario tiene permiso, al igual que en los otros módulos de Tryton, el us
 .. image:: img/factura.png
    :width: 750 px
 
+Factura Electrónica:
+--------------------
 En el caso de tratarse de una factura electrónica será necesario completar los datos que la AFIP solicita, es decir, ver si se trata de un Producto o Servicio y en este caso especificar las fechas del mismo. 
  
 .. image:: img/afipfactura.png
@@ -49,4 +51,8 @@ Tryton maneja otras formas para la generación de tickets rápido (ver tryton po
 Recuperar Factura:
 ------------------
 
-El módulo "Recuperar Factura" es una funcionaldiad para factura electrónica de la AFIP. Se utiliza ante cortes de conectividad al realizar una (o varias) facturas. Permite consultar en la AFIP por un numero de factura para ver si la misma existe en la AFIP y en caso de ser necesario traer los datos de la AFIP y agregarlos auna factura que quedó mal confeccionada.
+El módulo "Recuperar Factura" es una funcionaldiad para factura electrónica de la AFIP. Se utiliza ante cortes de conectividad al realizar una (o varias) facturas. Permite consultar en la AFIP por un numero de factura para ver si la misma existe en la AFIP y en caso de ser necesario traer los datos de la AFIP y agregarlos a una factura que quedó mal confeccionada.
+
+Facturas de Proveedor:
+----------------------
+En el apartado Facturas de Proveedor podrá cargar las facturas de sus proveedores ingresando cada una de las lineas que la misma contiene.
