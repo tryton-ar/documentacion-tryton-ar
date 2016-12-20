@@ -46,3 +46,7 @@ Una vez completados los datos necesario para la factura se podrán realizar las 
 
 Tryton maneja otras formas para la generación de tickets rápido (ver tryton pos). 
    
+Recuperar Factura:
+------------------
+
+El módulo "Recuperar Factura" es una funcionaldiad para factura electrónica de la AFIP. Se utiliza ante cortes de conectividad al realizar una (o varias) facturas. Permite consultar en la AFIP por un numero de factura para ver si la misma existe en la AFIP y en caso de ser necesario traer los datos de la AFIP y agregarlos auna factura que quedó mal confeccionada.
