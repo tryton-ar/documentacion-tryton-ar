@@ -10,12 +10,10 @@ Pensando en las necesidades de las cooperativas se desarrolló un sistema de ges
 
 Todas las pruebas y desarrollos fueron realizados utilizando el servidor y cliente Linux. 
 
-Desarrollado para Tryton 3.0
-
 Descripción funcional general
 -----------------------------
 
-El sistema Tryton es un sistema ERP multiempresa que permite la gestión de los procesos administrativos dentro de la empresa.
+El sistema Tryton es un sistema ERP que permite la gestión de los procesos administrativos dentro de la empresa.
 
 En lineas generales el Software permite:
 
