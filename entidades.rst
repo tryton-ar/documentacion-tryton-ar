@@ -1,6 +1,13 @@
 Entidades
 =========
 
+Configurar empresa:
+-------------------
+Para operar es necesario tener una empresa configurada (crear Entidad de la empresa). En la configuración se configura si se utilizará el webservice de la AFIP de factura electronica. Puede marcar contra qu servicio apunta (homologación o producción) y las llaves de conexión.
+
+Entidades:
+----------
+
 Para operar con Tryton se cargarán Entidades, es decir, clientes y proveedores (en Tryton la empresa también estará cargada como Entidad). 
 
 .. image:: img/entidad.png
