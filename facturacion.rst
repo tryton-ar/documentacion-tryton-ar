@@ -72,9 +72,9 @@ Al consultar, nos traerá una pantalla con los datos de la factura confirmada en
 .. image:: img/04-asistente-seleccionar-factura.png
    :width: 750 px
 
-Realizada la acción de guardar factura, podemos comprobar que le ha asignado su número de comprobante correspondiente y la ha pasado a estado confirmada (y obviamente creando el asiento contable).
+Realizada la acción de guardar factura, podemos comprobar que se le ha asignado su número de comprobante correspondiente y la ha pasado a estado confirmada (y obviamente creado el asiento contable).
 
-.. image:: img/04-asistente-seleccionar-factura.png
+.. image:: img/05-factura-confirmada.png
    :width: 750 px
 
 Facturas de Proveedor:
