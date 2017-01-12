@@ -79,19 +79,21 @@ Realizada la acción de guardar factura, podemos comprobar que se le ha asignado
 
 Facturas de Proveedor:
 ----------------------
-En el apartado Facturas de Proveedor podrá cargar las facturas de sus proveedores ingresando cada una de las lineas que la misma contiene.
+En el apartado Facturas de Proveedor podrá cargar las facturas de sus proveedores. Al crear un nuevo registro, la facturá se encontrará en estado *Borrador* con lo cual, usted puede modificar todos sus datos, luego al completar todos los datos, debe pasarla a estado *Confirmado* para que genere los asientos contables en el sistema y repercute en los informes (Subdiario IVA Compras, CITI RG3685, etc).
 
 El sistema, ya viene cargado con los impuestos de IVA compras. Si usted debe cargar una factura de proveedor donde se perciben impuestos de IIBB, entonces debe crear los impuestos de IIBB de Compras y luego agregar el impuesto a la factura de forma manual. En el siguiente apartado daremos un ejemplo de cada.
 
 Primero debe ir al apartado: Contabilidad -> Facturas -> Facturas de proveedor y crear un nuevo registro.
-Datos a tener en cuenta para cargar una factura:
+
+Cabecera de factura
+___________________
 
 La factura contiene un sector de cabecera donde se destacan ciertos campos a completar:
 
  * Entidad: La entidad (proveedor) si no se encuentra puede cargarla desde aquí. En la entidad debe cargar el CUIT/DNI.
  * Referencia: El número de comprobante de la factura del proveedor.
  * Descripción: Información sobre la compra.
- * Comprobante: Tipo de comprobante de la factura. (aquí se listan todos los aceptador por AFIP)
+ * Comprobante: Tipo de comprobante de la factura. `Tabla de comprobantes AFIP <https://www.afip.gob.ar/fe/documentos/TABLACOMPROBANTES.xls>`_
  * Fecha de factura: La fecha de la factura.
  * Término de pago: Debe ser creado con anterioridad, o puede crearlo desde aquí.
    Tener en cuenta que este dato es utilizado por si usted ha definido pagarle a su proveedor por ejemplo a 15 días o al Contado.
@@ -99,19 +101,21 @@ La factura contiene un sector de cabecera donde se destacan ciertos campos a com
 
  (captura de pantalla de carga de factura)
 
-Luego debe completar los renglones o lineas de factura:
+Lineas de factura
+_________________
 
 .. note:: Si usted lo desea, para facilitar la carga, puede cargarle a su sistema los productos de compras. De esa manera, ya estará parametrizando algunos datos para no tener que cargarlos cada vez que hace una compra por el mismo producto/servicio.
 
 Veremos que tenemos la pestaña General. Debemos seleccionar *tipo: Linea*
+
  * Producto: Si ya tuviera un producto de compras, lo debe seleccionar. Haciendo esto, se cargará automáticamente (si el producto ya ha sido parametrizado correctamente) el impuesto de compra (ej: IVA 21% de Compras) y la Cuenta contable a la que va a imputar.
 
  * Descripción: Información sobre el producto u/o servicio que esta comprando.
  * Tipo de producto: Información para ser cargada en el subdiario de compras.
  * Cantidad: Cantidades del producto a comprar.
- * Unidad de medida: Probablemente la mayoría de las veces utiliza *Unidad*.
+ * Unidad de medida: Probablemente la mayoría de las veces utilice *Unidad*. Sino, puede seleccionar otro tipo de unidad de medida, (ej: Kilogramos)
  * Precio unitario: Si estamos seleccionando un producto, cargará este dato automáticamente.
- * Importe: precio unitario * cantidad
+ * Importe: Se actualizará automáticamente utilizando los datos de precio unitario y cantidad.
  * Impuestos: Si esta linea de factura esta gravada, aquí debe cargar el impuesto o impuestos en cuestión (Ej: IVA 21% Compras).
 
  (captura de pantalla de linea)
@@ -121,7 +125,7 @@ Veremos que tenemos la pestaña General. Debemos seleccionar *tipo: Linea*
  (captura de pantalla de subdiario)
 
 Cargar impuesto de forma manual
----------------------------------
+_______________________________
 
 Un ejemplo de una carga de dicho impuesto sería IIBB. Para hacer la carga de este impuesto,
 debe ir la sección de impuestos de la factura y agregar un nuevo registro.
@@ -134,5 +138,9 @@ Tener en cuenta que como va a tener que cargar la base imponibe del impuesto, es
  * Importe: Si el impuesto es de tipo porcentaje, se completara solo. Si es de tipo fijo, usted debe cargar el importe del impuesto.
 
 (captura de pantalla del cuadro de impuestos)
+
 (captura de pantalla de carga del impuesto manual)
+
 (captura de pantalla de carga de un impuesto)
+
+Terminada la carga de la factura, puede pasar este registro a estado Confirmada. En el apartado de Contabilidad -> Comprobantes puede obtener información sobre como cargar el pago de una factura de proveedor.

@@ -24,6 +24,18 @@ Voucher_Ar puede integrarse con el botón pagar por lo que al presionar pagar en
 Recibos: permite registrar las distintas "Formas de Pago" que componen el pago y al mismo tienmpo registar si el mismo tuvo una Retención.  
 Pagos: permite registrar los pagos realizados y la o las facturas que el mismo cancelan. 
 
+Configuración
+_____________
+
+ * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
+ * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
+
+Pagos
+_____
+
+Recibos
+_______
+
 Tesoreria:
 ----------
 En construcción
@@ -34,4 +46,14 @@ En construcción
 
 Informes: 
 ----------
-En construcción
+
+Se han creado algunos informes que sean de utilidad para la liquidación de impuestos en el sistema contable Argentino.
+
+Subdiario de Ventas
+___________________
+
+Subdiario de Compras
+____________________
+
+RG 3885 (ex CITI)
+_________________
