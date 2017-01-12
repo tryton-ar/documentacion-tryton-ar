@@ -53,6 +53,30 @@ Recuperar Factura:
 
 El módulo "Recuperar Factura" es una funcionaldiad para factura electrónica de la AFIP. Se utiliza ante cortes de conectividad al realizar una (o varias) facturas. Permite consultar en la AFIP por un numero de factura para ver si la misma existe en la AFIP y en caso de ser necesario traer los datos de la AFIP y agregarlos a una factura que quedó mal confeccionada.
 
+En este caso, la factura quedará en estado borrador en nuestro sistema.
+
+.. image:: img/01-factura-borrador.png
+   :width: 750 px
+
+Para poder pasarla a estado confirmado y guardar los datos de AFIP (CAE y fecha vencimiento CAE), utilizaremos el asistente de Recuperar Factura. Este asistente se ejecuta desde el botón de lanzar acciones en la sección de Facturas.
+
+Cuando se ejecuta el asistente, debemos primer consultar en AFIP el número de comprobante que estamos queriendo recuperar. Para ello, completamos los datos de punto de venta, tipo de comprobante, y número de comprobante.
+
+.. image:: img/02-asistente-buscar-factura.png
+   :width: 750 px
+
+Al consultar, nos traerá una pantalla con los datos de la factura confirmada en AFIP. Debemos ir a la pestaña *factura a recuperar* y buscar la factura que queremos pasar a estado confirmada y guardar los datos de AFIP.
+
+.. image:: img/03-asistente-comprobar-factura.png
+   :width: 750 px
+.. image:: img/04-asistente-seleccionar-factura.png
+   :width: 750 px
+
+Realizada la acción de guardar factura, podemos comprobar que le ha asignado su número de comprobante correspondiente y la ha pasado a estado confirmada (y obviamente creando el asiento contable).
+
+.. image:: img/04-asistente-seleccionar-factura.png
+   :width: 750 px
+
 Facturas de Proveedor:
 ----------------------
 En el apartado Facturas de Proveedor podrá cargar las facturas de sus proveedores ingresando cada una de las lineas que la misma contiene.
