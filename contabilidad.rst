@@ -2,20 +2,20 @@ Contabilidad
 ============
 
 
-Planes Contables:
+Planes Contables
 ----------------
 En construcción
 
 
-Ejecicio Fiscal:
+Ejecicio Fiscal
 ----------------
 Ver Puesta en Marcha
 
-Diarios:
+Diarios
 --------
 En Construcción
 
-Comprobantes:
+Comprobantes
 -------------
 En construcción
 
@@ -36,15 +36,24 @@ _____
 Recibos
 _______
 
-Tesoreria:
-----------
+Cheques
+-------
 En construcción
 
-Asientos:
+En Contabilidad -> Tesorería podrá cargar y listar los cheques emitidos por la empresa como los de terceros.
+
+
+Emitidos
+________
+
+Terceros
+________
+
+Asientos
 ---------
 En construcción
 
-Informes: 
+Informes
 ----------
 
 Se han creado algunos informes que sean de utilidad para la liquidación de impuestos en el sistema contable Argentino.
