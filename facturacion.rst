@@ -3,8 +3,8 @@ Facturación
 
 Se detalla a continuación la facturación para la Argentina y en particular la facturación electrónica contra la AFIP.
 
-Configurar Punto de Venta:
---------------------------
+Configurar Punto de Venta
+-------------------------
 Según las reglas de facturación de la Argentina existen distintos Puntos de Ventas, lo cuales pueden ser: Manuales, Electrónicos o Tickeadora Fiscal.
 Es por eso que antes de facturar se deben configurar los puntos de venta. 
 Esto supone marcar qué tipo de Punto de venta es y qué facturas emite el mismo (A, B, C, etc.). 
@@ -23,8 +23,8 @@ El template de facturas viene armado para tomar los datos que devuelve la AFIP e
 Para poder realizar la facturación es importante tener bien configurada la Empresa: cargar certificados de AFIP para la facturación electrónica, la condición ante el IVA y el CUIT y el logo de la misma (usado en la factura).
 También se deberá cargar de forma correcta el cliente (CUIT y tipo de IVA).
 
-Confeccionar una factura:
---------------------------
+Factura de cliente
+------------------
 Una vez configurado un Punto de Venta se puede proceder a facturar. Para el caso de facturar de forma electrónica será necesario contar con acceso Internet.
 Para conformar una factura será necesario Contar con: una Entidad, un término de pago y comenzar a llenar las lineas de la factura. 
 Si el usuario tiene permiso, al igual que en los otros módulos de Tryton, el usuario podrá crear todas estos datos en el momento mismo de crear una factura.
@@ -32,8 +32,8 @@ Si el usuario tiene permiso, al igual que en los otros módulos de Tryton, el us
 .. image:: img/factura.png
    :width: 750 px
 
-Factura Electrónica:
---------------------
+Factura Electrónica
+-------------------
 En el caso de tratarse de una factura electrónica será necesario completar los datos que la AFIP solicita, es decir, ver si se trata de un Producto o Servicio y en este caso especificar las fechas del mismo. 
  
 .. image:: img/afipfactura.png
@@ -48,8 +48,8 @@ Una vez completados los datos necesario para la factura se podrán realizar las 
 
 Tryton maneja otras formas para la generación de tickets rápido (ver tryton pos). 
    
-Recuperar Factura:
-------------------
+Recuperar Factura
+-----------------
 
 El módulo "Recuperar Factura" es una funcionaldiad para factura electrónica de la AFIP. Se utiliza ante cortes de conectividad al realizar una (o varias) facturas. Permite consultar en la AFIP por un numero de factura para ver si la misma existe en la AFIP y en caso de ser necesario traer los datos de la AFIP y agregarlos a una factura que quedó mal confeccionada.
 
@@ -77,8 +77,8 @@ Realizada la acción de guardar factura, podemos comprobar que se le ha asignado
 .. image:: img/05-factura-confirmada.png
    :width: 750 px
 
-Facturas de Proveedor:
-----------------------
+Facturas de Proveedor
+---------------------
 En el apartado Facturas de Proveedor podrá cargar las facturas de sus proveedores. Al crear un nuevo registro, la facturá se encontrará en estado *Borrador* con lo cual, usted puede modificar todos sus datos, luego al completar todos los datos, debe pasarla a estado *Confirmado* para que genere los asientos contables en el sistema y repercute en los informes (Subdiario IVA Compras, CITI RG3685, etc).
 
 El sistema, ya viene cargado con los impuestos de IVA compras. Si usted debe cargar una factura de proveedor donde se perciben impuestos de IIBB, entonces debe crear los impuestos de IIBB de Compras y luego agregar el impuesto a la factura de forma manual. En el siguiente apartado daremos un ejemplo de cada.
