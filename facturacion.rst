@@ -99,7 +99,8 @@ La factura contiene un sector de cabecera donde se destacan ciertos campos a com
    Tener en cuenta que este dato es utilizado por si usted ha definido pagarle a su proveedor por ejemplo a 15 días o al Contado.
  * Moneda: Utilizará por defecto la moneda con la que esta definida su compañia (Peso Argentino), pero si esta cargando una factura de proveedor del exterior, entonces debe cambiar la Moneda (ej: USD).
 
- (captura de pantalla de carga de factura)
+.. image:: img/01-factura-proveedor-con-lineas.png
+   :width: 750 px
 
 Lineas de factura
 _________________
@@ -118,11 +119,20 @@ Veremos que tenemos la pestaña General. Debemos seleccionar *tipo: Linea*
  * Importe: Se actualizará automáticamente utilizando los datos de precio unitario y cantidad.
  * Impuestos: Si esta linea de factura esta gravada, aquí debe cargar el impuesto o impuestos en cuestión (Ej: IVA 21% Compras).
 
- (captura de pantalla de linea)
+.. image:: img/02-linea-factura-con-producto.png
+   :width: 750 px
 
 .. note:: Si la linea en cuestión no esta gravada, entonces no se le debe cargar el impuesto. Luego en el SUBDIARIO de Compras se informará este importe en una columna separada.
 
- (captura de pantalla de subdiario)
+.. image:: img/05-linea-no-gravada.png
+   :width: 750 px
+
+.. image:: img/06-factura-linea-no-gravada.png
+   :width: 750 px
+
+.. image:: img/07-subdiario-compras.png
+   :width: 750 px
+
 
 Cargar impuesto de forma manual
 _______________________________
@@ -137,10 +147,13 @@ Tener en cuenta que como va a tener que cargar la base imponibe del impuesto, es
  * Base: Se debe cargar el importe de la base imponible.
  * Importe: Si el impuesto es de tipo porcentaje, se completara solo. Si es de tipo fijo, usted debe cargar el importe del impuesto.
 
-(captura de pantalla del cuadro de impuestos)
+.. image:: img/04-tabla-impuestos.png
+   :width: 750 px
 
-(captura de pantalla de carga del impuesto manual)
+.. image:: img/03-cargar-impuesto-manual-iibb.png
+   :width: 750 px
 
-(captura de pantalla de carga de un impuesto)
+.. image:: img/08-subdiario-compras-liquidacion-iibb.png
+   :width: 750 px
 
 Terminada la carga de la factura, puede pasar este registro a estado Confirmada. En el apartado de Contabilidad -> Comprobantes puede obtener información sobre como cargar el pago de una factura de proveedor.
