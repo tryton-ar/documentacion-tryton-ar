@@ -130,6 +130,8 @@ Veremos que tenemos la pestaña General. Debemos seleccionar *tipo: Linea*
 .. image:: img/06-factura-linea-no-gravada.png
    :width: 750 px
 
+Observar la columna *No gravado* donde aparece el importe de la linea en cuestión.
+
 .. image:: img/07-subdiario-compras.png
    :width: 750 px
 
@@ -147,11 +149,16 @@ Tener en cuenta que como va a tener que cargar la base imponibe del impuesto, es
  * Base: Se debe cargar el importe de la base imponible.
  * Importe: Si el impuesto es de tipo porcentaje, se completara solo. Si es de tipo fijo, usted debe cargar el importe del impuesto.
 
+.. image:: img/03-cargar-impuesto-manual-iibb.png
+   :width: 750 px
+
+Se puede ver que las lineas de factura tiene asociado un solo impuesto, y la factura tiene cargado dos impuestos. Uno por el IVA (que se asocian a las lineas factura) y el de IIBB que se ha cargado de forma manual.
+
 .. image:: img/04-tabla-impuestos.png
    :width: 750 px
 
-.. image:: img/03-cargar-impuesto-manual-iibb.png
-   :width: 750 px
+
+Luego en el subdiario de compras tendremos la liquidación del impuesto de IIBB por provincia.
 
 .. image:: img/08-subdiario-compras-liquidacion-iibb.png
    :width: 750 px
