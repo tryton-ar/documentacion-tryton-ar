@@ -91,7 +91,7 @@ ___________________
 La factura contiene un sector de cabecera donde se destacan ciertos campos a completar:
 
  * Entidad: La entidad (proveedor) si no se encuentra puede cargarla desde aquí. En la entidad debe cargar el CUIT/DNI.
- * Referencia: El número de comprobante de la factura del proveedor.
+ * Referencia: Se debe cargar punto de venta y número de comprobante de la factura del proveedor. Se debe cargar con 4 dígitos para el punto de venta y 8 para el número de comprobante (completando con ceros a la izquierda) y agregando el caracter guión (-) entre ambos. Un ejemplo sería: 0001-00001211.
  * Descripción: Información sobre la compra.
  * Comprobante: Tipo de comprobante de la factura. `Tabla de comprobantes AFIP <https://www.afip.gob.ar/fe/documentos/TABLACOMPROBANTES.xls>`_
  * Fecha de factura: La fecha de la factura.
