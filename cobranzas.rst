@@ -1,6 +1,6 @@
 
-Cobranzas:
-==========
+Cobranzas
+=========
 
 Descricpión General:
 --------------------
