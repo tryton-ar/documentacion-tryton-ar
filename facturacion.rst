@@ -165,6 +165,9 @@ Luego en el subdiario de compras tendremos la liquidación del impuesto de IIBB 
 
 Terminada la carga de la factura, puede pasar este registro a estado Confirmada. En el apartado de Contabilidad -> Comprobantes puede obtener información sobre como cargar el pago de una factura de proveedor.
 
+Notas de Crédito y Débito
+-------------------------
+
 Notas de Crédito
 ________________
 
