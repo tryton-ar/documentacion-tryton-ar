@@ -73,6 +73,10 @@ También ser necesario cargar un Diario Cheques donde se llevará el registro de
 .. image:: img/cheques/01_diario_cheque.png
    :width: 750 px
 
+.. image:: img/cheques/02_diario_cheque_cuentas.png
+   :width: 750 px
+
+
 En Contabilidad -> Tesorería podrá cargar y listar los cheques emitidos por la empresa como los de terceros.
 
 Emitidos
@@ -101,8 +105,14 @@ Se han creado algunos informes que sean de utilidad para la liquidación de impu
 Subdiario de Ventas
 ___________________
 
+Informe detallado de las ventas realizadas desglosado por impuestos.
+
 Subdiario de Compras
 ____________________
 
+Informe detallado de las compras realizadas desglosado por impuestos.
+
 RG 3885 (ex CITI)
 _________________
+
+Exporta archivos TXT para hacer la presentación de las operaciones de compra / venta.
