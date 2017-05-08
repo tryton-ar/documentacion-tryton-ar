@@ -26,12 +26,17 @@ Si el Recibo se genera desde la opción Pagar de una factura la misma ya viene c
 También se puede seleccionar más de una factura para cancelar varias facturas  con un pago. 
 Luego es necesario escribir en Forma de Pago, para cargar de qué forma se pagó esa Factura, por ejemplo: acreditacin bancaria, contado, etc.
 
-.. image:: img/recibos.png
+.. image:: img/forma_de_pago/recibo_forma_de_pago.png
    :width: 750 px
-   
-En otra solapa se puede cargar la o las Retenciones si es que se hayan realizado (si existen). 
 
-.. image:: img/retenciones.png
+La forma de pago lleva un nombre y una cuenta en la que imputa:
+
+.. image:: img/forma_de_pago/forma_de_pago.png
+   :width: 750 px
+
+En otra solapa se puede cargar la o las Retenciones (si existen). Las retenciones efectuadas son las realizadas poruno mismo y las soportadas son las que nos realizan.  
+
+.. image:: img/retenciones/retencion_soprtada_iibb.png
    :width: 750 px
 
 En el tab de cheques se permite la carga o utilización de cheques que se hayan recibido (cheques de terceros). 
