@@ -41,7 +41,7 @@ En otra solapa se puede cargar la o las Retenciones (si existen). Las retencione
 
 En el tab de cheques se permite la carga o utilización de cheques que se hayan recibido (cheques de terceros). 
 
-.. image:: img/07_ejemplo_recibo_con_cheque.png
+.. image:: img/cheques/07_ejemplo_recibo_con_cheque.png
    :width: 750 px
 
 De esta forma Tryton maneja la cancelación de una o varias facturas a través de una pago que puede contener distintas formas o entidades. 
@@ -50,7 +50,7 @@ Pagos:
 ______
 Pagos: permite registrar los pagos realizados y la o las facturas que el mismo cancela. El formato de carga es igual que el de Recibos y permite el uso de los Cheques Emitidos.
 
-.. image:: img/06_ejemplo_pago_con_cheque.png
+.. image:: img/cheques/06_ejemplo_pago_con_cheque.png
    :width: 750 px
 
 
@@ -70,7 +70,7 @@ Tryton permite el manejo de la cartera de cheques. El primer paso a realizar es 
 
 También ser necesario cargar un Diario Cheques donde se llevará el registro de los mismos.
 
-.. image:: img/01_diario_cheque.png
+.. image:: img/cheques/01_diario_cheque.png
    :width: 750 px
 
 En Contabilidad -> Tesorería podrá cargar y listar los cheques emitidos por la empresa como los de terceros.
@@ -79,14 +79,14 @@ Emitidos
 ________
 En este sector podrá consignar los cheques emitidos señalando el estado del mismo. Estos cheques podrán ser utilizados para Pagos. 
 
-.. image:: img/05_formulario_cheque_emitido.png
+.. image:: img/cheques/05_formulario_cheque_emitido.png
    :width: 750 px
 
 Terceros
 ________
 En este sector podrá consignar los cheques recibidos de tercero, señalando el estado del mismo. Estos cheques podrán ser utilizados o cargados desde Recibos. 
 
-.. image:: img/05_formulario_cheque_emitido.png
+.. image:: img/cheques/05_formulario_cheque_tercero.png
    :width: 750 px
 
 Asientos
