@@ -170,15 +170,21 @@ ________________
 
 Una nota de crédito es un documento oficial que cancela una factura, en este sentido la misma debe ser realizada desde la factura de cliente que se desea anular o modificar (no se deben generar las notas de crédito como una factura independiente).
 
-.. image:: img/notadecredito.png
+.. image:: img/nota_de_credito.png
    :width: 750 px
 
 Se debe presionar sobre a la acción (imagen de rombo) Abonar para iniciar el armado de una Nota de Crédito. Si se tilda la opción Cón Devolución, Tryton realiza la devolucin de mercancia (si existe) y cancela completamente la factura y realiza el asiento correspondiete (ambas facturas estn marcadas como pagadas). 
 Caso contrario la devolución es parcial (destildar Con Devolución). En este caso se genera una Nota de Crédito en estado Boraador que debe ser editada y llevada a confirmar.  
 
-Notas de Crédito
+.. image:: img/nota_de_credito_boton_abonar.png
+   :width: 750 px
+
+.. image:: img/boton_con_devolucion.png
+   :width: 750 px
+
+Notas de Débito
 ________________
 Para el caso de la Nota de Débito se debe presionar Crear Factura de Cliente y elegir el tipo de comprobante Nota de Débito. 
 
-.. image:: img/notadedebito.png
+.. image:: img/nota_de_debito.png
    :width: 750 px
