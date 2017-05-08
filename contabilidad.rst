@@ -50,7 +50,7 @@ Pagos:
 ______
 Pagos: permite registrar los pagos realizados y la o las facturas que el mismo cancela. El formato de carga es igual que el de Recibos y permite el uso de los Cheques Emitidos.
 
-.. image:: img/cheques/06_ejemplo_pago_con_cheque.png
+.. image:: img/cheques/08_ejemplo_pago_con_cheque.png
    :width: 750 px
 
 
@@ -65,7 +65,7 @@ Cheques
 -------
 Tryton permite el manejo de la cartera de cheques. El primer paso a realizar es configurar en la Entidad cargada como Empresa en el Sistema la cuenta bancaria donde trabajará. Debe ir a Entidades, buscar la Entidad e ingresar a la solapa Bancos y configura la cuenta bancaria.
 
-.. image:: img/03_cuenta_bancaria_de_company.png
+.. image:: img/cheques/03_cuenta_bancaria_de_company.png
    :width: 750 px
 
 También ser necesario cargar un Diario Cheques donde se llevará el registro de los mismos.
@@ -86,7 +86,7 @@ Terceros
 ________
 En este sector podrá consignar los cheques recibidos de tercero, señalando el estado del mismo. Estos cheques podrán ser utilizados o cargados desde Recibos. 
 
-.. image:: img/cheques/05_formulario_cheque_tercero.png
+.. image:: img/cheques/06_formulario_cheque_tercero.png
    :width: 750 px
 
 Asientos
