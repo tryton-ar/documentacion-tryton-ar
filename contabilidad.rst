@@ -55,8 +55,6 @@ Una vez completada la cabecera, podemos ir rellenando el resto de campos según 
 
 .. note::  vez tengamos creadas las cuentas contables que necesitemos, podremos ir al menú Contabilidad / Configuración / Contable y configurar las cuentas que utilizaremos por defecto para los pagos y los ingresos.
 
-
-
 Diarios
 --------
 
@@ -66,13 +64,13 @@ En el formulario que se nos abrirá, deberemos seleccionar el Nombre, el Tipo, e
 
 A parte de los distintos Tipos de diario que vienen por defecto en Tryton, podemos crear nuevas tipologías según nuestras necesidades accediendo al menú Contabilidad / Configuración / Diarios / Tipos de diario y, tras clicar en Nuevo, indicar un Nombre y un Código para la nueva tipología de diario. Posteriormente, podemos modificar o crear uno o varios diarios nuevos configurándolos con la nueva tipología.
 
-Comprobantes
--------------
+Comprobantes de pago y cobro
+----------------------------
 En Argentina se desarrolló el Módulo Voucher_ar. El mismo permite crear Recibos y Pagos para registrar de forma correcta los ingresos y egresos. 
 Voucher_Ar puede integrarse con el botón pagar por lo que al presionar pagar en una factura se abre la opción de voucher_ar para registrar el pago con todas sus opciones. 
 
-Recibos:
-_______
+Recibos de cobro
+________________
 
 Se utiliza cuando se está cobrando una Factura, es decir, se está ingresando un Pago de Cliente. Permite registrar las distintas "Formas de Pago" que componen el pago y al mismo tiempo registar si el mismo tuvo una Retención.
 Si el Recibo se genera desde la opción Pagar de una factura la misma ya viene cargada en la columna de Facturas Pendientes.
@@ -99,8 +97,9 @@ En el tab de cheques se permite la carga o utilización de cheques que se hayan 
 
 De esta forma Tryton maneja la cancelación de una o varias facturas a través de una pago que puede contener distintas formas o entidades. 
 
-Pagos:
-______
+Recibos de Pago
+_______________
+
 Pagos: permite registrar los pagos realizados y la o las facturas que el mismo cancela. El formato de carga es igual que el de Recibos y permite el uso de los Cheques Emitidos.
 
 .. image:: img/cheques/08_ejemplo_pago_con_cheque.png
