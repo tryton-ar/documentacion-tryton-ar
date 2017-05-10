@@ -6,13 +6,46 @@ Planes Contables
 ----------------
 Los planes contables son editables según como lo desee el usuario. Tryton viene con un Plan Mínimo por defecto y en Argentina se desarrolló un Plan Base de empresas de servicio. A las cuentas marcadas como de Tipo Vista no se les puede generar imputaciones, sino que sirven de ordenamiento y se les puede cargar cuentas hijos.  
 
+Cuentas Contables
+_________________
+
+Una cuenta contable es el lugar donde indicamos los cambios que se producen en nuestros activos o pasivos durante un periodo concreto. Estos cambios suelen ser agrupados en distintas cuentas contables según su naturaleza, por lo que, por medio de las cuentas, podemos analizar la evolución de nuestros activos, nuestras obligaciones o las variaciones de nuestro capital. Para crear una nueva cuenta debemos dirigirnos al menú Contabilidad / Configuración / Planes contables / Cuentas / Cuentas y clickear en el botón Nuevo.
+
+También podemos duplicar cualquier cuenta del Plan General de Contabilidad y posteriormente modificarla según nuestro intereses. (Por ejemplo buscamos la 1135 para crear la 1136)
+
+.. note:: Hay que ir con cuidado a no duplicar cuentas de tipo vista, a menos que sepamos perfectamente lo que estamos haciendo.
+
+En primer lugar deberemos rellenar la cabecera del formulario que se nos abrirá, indicando el Nombre y el Código de esta nueva cuenta. Si le ponemos un código numérico, el Código nos servirá para clasificar la cuenta e indicarle al sistema de qué grupos va a depender.
+
+Una vez completada la cabecera, podemos ir rellenando el resto de campos según el carácter que le queramos dar a la nueva cuenta contable:
+
+ * Empresa: Indicaremos para cual de nuestras empresas crearemos la cuenta.
+ * Padre: En caso de que la cuenta que estamos creando dependa de otra, lo deberemos indicar aquí.
+ * Clase: En este campo seleccionaremos de qué tipo será esta nueva cuenta. Si indicamos en este campo Vista le estaremos indicando al sistema que esta cuenta agrupará otras cuentas. El resto de tipologías que podemos seleccionar son: A cobrar, A pagar, Existencias, Gastos, Ingresos y Otros.
+ * Cierre: Marcaremos en caso de que la cuenta sea prorrogable tras el cierre del ejercicio fiscal. Este campo nos permite indicar si el saldo de la cuenta debe ser arrastrado al período siguiente una vez cerrado el año.
+ * Conciliar: En caso de que queramos que la cuenta sea conciliable.
+ * Entidad requerida: Marcaremos en caso de que queramos que sea obligatorio que se indique entidad al hacer asientos. (Las cuentas de tipo *a cobrar* y *a pagar* es necesario que este dato sea seleccionado.
+ * Moneda: Por defecto nos indicará la moneda configurada por defecto para la contabilidad de la empresa.
+ * Moneda secundaria: Si indicamos una Moneda secundaria, cuando vayamos a ver los extractos de la cuenta que estamos creando, además de los importes con la moneda principal, nos aparecerán también una columna indicando la conversión de los importes a la Moneda secundaria seleccionada.
+ * Impuestos por defecto: Seleccionaremos aquí, en caso de que queramos informar de impuestos específicos para los apuntes que se añadan a la cuenta.
+ * Hijos: En caso de que queramos que otras cuentas dependan de la que estamos creando lo podremos indicar o crear otras cuentas nuevas por medio de este campo.
+ * Cierres: En esta pestaña se nos irán indicando, en caso de tener marcado el tick del campo Cierre y conforme vayamos cerrando ejercicios fiscales, los importes del debe y haber del ejercicio fiscal al cierre de este.
+
+.. note::  vez tengamos creadas las cuentas contables que necesitemos, podremos ir al menú Contabilidad / Configuración / Contable y configurar las cuentas que utilizaremos por defecto para los pagos y los ingresos.
+
+
 Ejecicio Fiscal
 ----------------
 Ver Puesta en Marcha.
 
 Diarios
 --------
-En Construcción
+
+Los libros diarios son libros donde se van estableciendo cronológicamente los registros contables que se van produciendo en nuestra empresa. Para crear uno nuevo debemos acceder por medio de la ruta Contabilidad / Configuración / Diarios / Diarios y hacer clic en el icono Nuevo.
+
+En el formulario que se nos abrirá, deberemos seleccionar el Nombre, el Tipo, elegir qué clase de Secuencia se seguirá (podemos crear una nueva secuencia o elegir una ya creada (Crear una secuencia)), la Cuenta haber por defecto y la Cuenta debe por defecto. Además podemos elegir también si en este diario permitiremos que se cancelen asientos. Una vez rellenados los campos podremos guardar el diario y ya lo tendremos operativo para empezar a realizar apuntes contables en él.
+
+A parte de los distintos Tipos de diario que vienen por defecto en Tryton, podemos crear nuevas tipologías según nuestras necesidades accediendo al menú Contabilidad / Configuración / Diarios / Tipos de diario y, tras clicar en Nuevo, indicar un Nombre y un Código para la nueva tipología de diario. Posteriormente, podemos modificar o crear uno o varios diarios nuevos configurándolos con la nueva tipología.
 
 Comprobantes
 -------------
@@ -21,6 +54,7 @@ Voucher_Ar puede integrarse con el botón pagar por lo que al presionar pagar en
 
 Recibos:
 _______
+
 Se utiliza cuando se está cobrando una Factura, es decir, se está ingresando un Pago de Cliente. Permite registrar las distintas "Formas de Pago" que componen el pago y al mismo tiempo registar si el mismo tuvo una Retención.
 Si el Recibo se genera desde la opción Pagar de una factura la misma ya viene cargada en la columna de Facturas Pendientes.
 También se puede seleccionar más de una factura para cancelar varias facturas  con un pago. 
