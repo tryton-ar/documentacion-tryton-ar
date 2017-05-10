@@ -1,6 +1,28 @@
 Contabilidad
 ============
 
+Ejecicio Fiscal
+----------------
+
+Abrir ejercicio fiscal
+
+El ejercicio fiscal, que por regla general suele coincidir con el año natural, tiene como función acotar el inicio y cierre de los diferentes libros que vamos a utilizar. Además limita temporalmente las anotaciones contables que podamos introducir en el sistema, de manera que hasta que no se abra el ejercicio fiscal (y los correspondientes periodos) no se podrá confirmar ninguna factura (ni ningún asiento contable) fechada en ese año. Por ejemplo, no se podrá confirmar ninguna factura fechada en el 2015 hasta que no se abra un ejercicio fiscal con Fecha inicial 01/01/2015 y Fecha final 31/12/2015.
+
+Para abrir un ejercicio fiscal debemos dirigirnos al menú Contabilidad / Configuración / Ejercicios fiscales / Ejercicios fiscales, hacemos clic en el botón nuevo y rellenamos todos los campos obligatorios: Nombre, Fecha inicial y Fecha final. Si lo deseamos, también podemos dar un código al ejercicio fiscal, aunque este campo tiene un carácter opcional.
+
+.. note:: Normalmente, solemos poner el año al que corresponde el ejercicio fiscal en Nombre y en Fecha inicial y Fecha final, la fecha de inicio y fin del año natural.
+
+En la pestaña Secuencias deberemos introducir la secuencia que queramos que se utilice para los asientos y las distintas facturas confirmadas del periodo fiscal. Podemos elegir una secuencia creada previamente o crear una clicando sobre el icono Nuevo (Crear una secuencia). Es imprescindible a nivel contable que la secuencia no se repita entre distintos ejercicios fiscales, por lo que, para cada uno de los distintos ejercicios que vayamos abriendo a lo largo del tiempo, deberemos crear nuevas secuencias.
+
+Las secuencias para las facturas de clientes y proveedor se crean utilizando la configuración del Punto de Ventas. Por defecto, en tryton, se asocian a un periodo fiscal, pero en la Argentina, las secuencias las asociaremos a un punto de venta y tipo de comprobante (ej: A, B, C, Nota de crédito, etc). En este caso, Tryton requerirá estas secuencias creadas en el sistema, pero no seran las utilizadas por la normativa de la Argentina (AFIP). Ver la documentación de Facturación para configurar el punto de venta con sus secuencias correspondientes.
+
+Por último, debemos crear las secuencias de recibo de pagos y cobros.
+
+Finalmente, una vez introducidos los parámetros generales y las secuencias, podemos volver a la pestaña Períodos y hacer clic en el botón Crear períodos mensuales. Con esto se nos generará un período para cada mes del año fiscal y, cuando desarrollemos nuestra actividad contable, todo asiento será siempre clasificado dentro de un período teniendo en cuenta su Fecha efectiva.
+
+.. note:: No es recomendable utilizar períodos trimestrales porque en varios informes contables Tryton solamente nos permitirá seleccionar por períodos, y si estos son trimestrales la concreción de los informes será menor. Es preferible hacer la división por meses y si necesitamos hacer alguna declaración trimestral, tan solo tendremos que unir periodos de tres en tres.
+
+Si esta configurando el ejercicio fiscal por primera vez, le recomendamos ver la página de *Puesta en Marcha*.
 
 Planes Contables
 ----------------
@@ -34,9 +56,6 @@ Una vez completada la cabecera, podemos ir rellenando el resto de campos según 
 .. note::  vez tengamos creadas las cuentas contables que necesitemos, podremos ir al menú Contabilidad / Configuración / Contable y configurar las cuentas que utilizaremos por defecto para los pagos y los ingresos.
 
 
-Ejecicio Fiscal
-----------------
-Ver Puesta en Marcha.
 
 Diarios
 --------
