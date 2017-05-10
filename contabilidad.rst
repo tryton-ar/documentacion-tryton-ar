@@ -171,6 +171,20 @@ Informes
 
 Se han creado algunos informes que sean de utilidad para la liquidación de impuestos en el sistema contable Argentino.
 
+Cuenta corriente de una entidad
+-------------------------------
+
+Informe que muestra un resumen de cuenta cronológico de las facturación relacionada
+a una entidad con sus pagos o cobros
+
+Se debe seleccionar la entidad en el listado de entidades, luego clickear en Relacionados -> Cuenta corriente
+
+.. image:: img/related_cuenta_corriente.png
+   :width: 750 px
+
+.. image:: img/entidad_cuenta_corriente.png
+   :width: 750 px
+
 Subdiario de Ventas
 ___________________
 
