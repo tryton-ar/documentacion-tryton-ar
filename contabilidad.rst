@@ -82,6 +82,9 @@ Las columnas listadas en las facturas pendientes son:
 
 .. note:: Por cada factura pendiente que se desee cobrar o pagar, se debe editar la columna saldo y agregar el monto que se quiera saldar.
 
+.. image:: img/saldar_factura.png
+   :width: 750 px
+
 Recibos de cobro
 ________________
 
