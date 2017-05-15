@@ -24,6 +24,7 @@ Introducción:
     productos.rst
     inventarios.rst
     contabilidad.rst
+    arba.rst
     facturacion.rst
     compras.rst
     ventas.rst
