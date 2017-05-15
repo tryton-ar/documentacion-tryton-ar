@@ -31,7 +31,8 @@ Para importar el padron, se debe configurar la clave fiscal de su usuario en *Co
 Realizada esta acción, puede comenzar la importarción del padrón clickeando el botón *Importar padron* en *Contabilidad -> ARBA -> ARBA Configuración*.
 
 Cuando ver la percepción que le corresponde a una entidad, debe ir al tab *Contabilidad*.
-.. image:: img/arba_entidad.png
+
+.. image:: img/arba_party.png
    :width: 750 px
 
 Cuando cargue la entidad al confeccionar una factura, se completa automáticamente, la alícuota que se le debe percibir o retener.
