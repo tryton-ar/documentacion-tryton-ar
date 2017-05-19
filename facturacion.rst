@@ -176,13 +176,21 @@ Una nota de crédito es un documento oficial que cancela una factura, en este se
 .. image:: img/nota_de_credito.png
    :width: 750 px
 
-Se debe presionar sobre a la acción (imagen de rombo) Abonar para iniciar el armado de una Nota de Crédito. Si se tilda la opción Cón Devolución, Tryton realiza la devolucin de mercancia (si existe) y cancela completamente la factura y realiza el asiento correspondiete (ambas facturas estn marcadas como pagadas). 
-Caso contrario la devolución es parcial (destildar Con Devolución). En este caso se genera una Nota de Crédito en estado Boraador que debe ser editada y llevada a confirmar.  
+Se debe presionar sobre a la acción (imagen de rombo) Abonar para iniciar el armado de una Nota de Crédito. Si se tilda la opción Cón Devolución, Tryton realiza la devolucin de mercancia (si existe) y cancela completamente la factura y realiza el asiento correspondiete. Pasará ambos comprobantes a estado Pagado.
+
 
 .. image:: img/nota_de_credito_boton_abonar.png
    :width: 750 px
 
 .. image:: img/boton_con_devolucion.png
+   :width: 750 px
+
+Caso contrario la devolución es parcial (destildar Con Devolución). En este caso se genera una Nota de Crédito en estado Borrador que debe ser editada y llevada a confirmar. 
+Para que ambos comprobantes se concilien automáticamente como lo realiza el asistente, se debe ejecutar el Asistente de *Conciliación de cuentas*. 
+
+Ir a Contabilidad -> Procesamiento -> Conciliar cuentas. Al ejecutar dicho asistente, recorrerá las entidades en búsqueda de montos que no han sido conciliados. Se deben pintar las lineas que se deseen conciliar y clickear en el botón *Conciliar*. Realizada esta acción, ambos comprobantes pasaran a estado pagado.
+
+.. image:: img/nota_de_credito_conciliar_cuenta.png
    :width: 750 px
 
 Notas de Débito
