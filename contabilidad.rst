@@ -80,7 +80,7 @@ Ir a Contabilidad -> Configuración -> Ejercicio Fiscal
  * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
  * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
 
-.. image:: img/voucher_secuencias.png.png
+.. image:: img/voucher_secuencias.png
    :width: 750 px
 
 Al crear un nuevo comprobante, se debe seleccionar la entidad, diario y gestión de divisas. Entonces se cargaran las facturas pendientes. Si los hubiera, también se cargaran los créditos o débitos correspondientes a la entidad para poder ser utilizados en el recibo. 
