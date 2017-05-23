@@ -69,7 +69,21 @@ Comprobantes de pago y cobro
 En Argentina se desarrolló el Módulo Voucher_ar. El mismo permite crear Recibos y Pagos para registrar de forma correcta los ingresos y egresos. 
 Voucher_Ar puede integrarse con el botón pagar por lo que al presionar pagar en una factura se abre la opción de voucher_ar para registrar el pago con todas sus opciones. 
 
-Al seleccionar la entidad, diario y gestión de divisas, se cargaran las facturas pendientes. Si los hubiera, también se cargaran los créditos o débitos correspondientes a la entidad para poder ser utilizados en el recibo. 
+Configuración
+_____________
+
+Antes de utilizar el módulo, se deben crear las secuencias de pago/recibo. Esto implica que se genere automáticamente el número de comprobante en cuestión. Como la numeración de los comprobantes depende del año fiscal, las secuencias se crean desde la configuración del año fiscal correspondiente.
+
+Ir a Contabilidad -> Configuración -> Ejercicio Fiscal
+
+
+ * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
+ * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
+
+.. image:: img/voucher_secuencias.png.png
+   :width: 750 px
+
+Al crear un nuevo comprobante, se debe seleccionar la entidad, diario y gestión de divisas. Entonces se cargaran las facturas pendientes. Si los hubiera, también se cargaran los créditos o débitos correspondientes a la entidad para poder ser utilizados en el recibo. 
 
 Las columnas listadas en las facturas pendientes son:
 
@@ -85,11 +99,6 @@ Las columnas listadas en las facturas pendientes son:
 .. image:: img/saldar_factura.png
    :width: 750 px
 
-Configuración
-_____________
-
- * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
- * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
 
 Recibos de cobro
 ________________
@@ -108,7 +117,7 @@ La forma de pago lleva un nombre y una cuenta en la que imputa:
 .. image:: img/forma_de_pago/forma_de_pago.png
    :width: 750 px
 
-En otra solapa se puede cargar la o las Retenciones (si existen). Las retenciones efectuadas son las realizadas poruno mismo y las soportadas son las que nos realizan.  
+En otra solapa se puede cargar la o las Retenciones (si existen). Las retenciones efectuadas son las realizadas por uno mismo y las soportadas son las que nos realizan.  
 
 .. image:: img/retenciones/retencion_soprtada_iibb.png
    :width: 750 px
@@ -120,6 +129,9 @@ En el tab de cheques se permite la carga o utilización de cheques que se hayan 
 
 De esta forma Tryton maneja la cancelación de una o varias facturas a través de una pago que puede contener distintas formas o entidades. 
 
+.. image:: img/voucher_saldar_varias_facturas_un_recibo.png
+   :width: 750 px
+
 Recibos de Pago
 _______________
 
@@ -127,6 +139,15 @@ Pagos: permite registrar los pagos realizados y la o las facturas que el mismo c
 
 .. image:: img/cheques/08_ejemplo_pago_con_cheque.png
    :width: 750 px
+
+La entidad tiene crédito a favor
+________________________________
+
+Si la entidad tiene crédito a favor, se cargaran en la pantalla las lineas respectivas. Si desea hacer uso de ese crédito para confeccionar un recibo, debe dejar la linea en el recibo que desea que sea utilizado, agregar en la columna *saldo* el monto que esta saldando de la factura, y en forma de pago, agregar el medio de pago y monto si con el crédito a favor no alcanzase para saldar el monto que usted desea de la factura.
+
+.. image:: img/voucher_saldar_con_credito.png
+   :width: 750 px
+
 
 Imprimir comprobante de recibo/pago
 ___________________________________
