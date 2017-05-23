@@ -3,6 +3,24 @@ Facturación
 
 Se detalla a continuación la facturación para la Argentina y en particular la facturación electrónica contra la AFIP.
 
+Desde Contabilidad / Facturas podremos gestionar toda la facturación de nuestra empresa, tanto las facturas que emitimos a nuestros clientes, como las que nos emiten nuestros proveedores, ya que el sistema distingue entre distintos tipos de facturas dependiendo de si se generan por una venta, una compra o por una devolución de estas. Desde el menú de facturación podremos acceder a cualquiera de los tipos de factura:
+
+ * Facturas de cliente
+ * Facturas de proveedor
+
+Para cada una de las distintas tipologías, el funcionamiento que encontraremos será el mismo: Podremos encontrar la factura en distintos estados dependiente de en qué punto se encuentre el proceso de facturación. Los estados en lo que podremos encontrar una factura son:
+
+    Borrador: Será el estado en el que se genere la factura y el único en el que se permita su edición, por lo que mientras factura se encuentre en este estado podremos modificar cualquier campo que deseemos (excepto el campo Número que se rellenará automáticamente cuando confirmemos la factura). Cuando ya tengamos todos los campos rellenados podremos modificar el estado de la factura clicando en el botón Validar o en el botón Confirmar.
+
+    Si la factura se genera desde una venta, esta también se creará en estado Borrador con todos los campos rellenados según la información de la venta, por lo que en este caso, tan solo tendremos que comprobar que los datos son correctos y Validar o Confirmar la factura.
+
+    Validada: Cuando validamos una factura, la edición de los campos se bloquea y el sistema ya no nos permite modificarla. Aun así, podemos cambiar el estado de nuevo a Borrador en cualquier momento para hacer alguna modificación. El estado validado no genera ningún asiento contable, es lo que también se conoce como factura pro forma. Hay que tener en cuenta que no es un paso previo al estado Confirmado, solo un estado en el que puede estar la factura antes de ser confirmada, si no trabajamos con Facturas pro forma podemos confirmar la factura directamente desde el estado Borrador.
+
+    Confirmada: Una vez confirmemos la factura, el sistema automáticamente le dará un número y la contabilizará generando un asiento contable en nuestro registro. Este es un paso definitivo y una vez esté la factura confirmada no se podrá volver a cambiar de estado y, por lo tanto, tampoco se podrá modificar. La factura quedara registrada en el sistema AFIP.
+
+    Pagada: La factura pasará a estado Pagada cuando le indiquemos al sistema que se ha realizado el pago. Para ello tendremos dos formas: si el pago de esta factura se hace en efectivo, clicaremos en el botón Pagar, y se generará un asiento conciliando los apuntes de pago con los generados por la factura; en caso de que el pago se realice por cualquier otro método, cuando conciliemos los apuntes generados por la factura, el sistema reconocerá que esta ha sido pagada y su estado cambiará a Pagada. En Argentina se ha desarrollado el módulo comprobantes de recibos/pagos para facilitar el pago de facturas utilizando los distintos medios de (efectivo, transferencia, cheques, etc).
+
+
 Configurar Punto de Venta
 -------------------------
 Según las reglas de facturación de la Argentina existen distintos Puntos de Ventas, lo cuales pueden ser: Manuales, Electrónicos o Tickeadora Fiscal.
