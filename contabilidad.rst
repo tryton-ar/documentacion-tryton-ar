@@ -85,6 +85,12 @@ Las columnas listadas en las facturas pendientes son:
 .. image:: img/saldar_factura.png
    :width: 750 px
 
+Configuración
+_____________
+
+ * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
+ * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
+
 Recibos de cobro
 ________________
 
@@ -122,13 +128,13 @@ Pagos: permite registrar los pagos realizados y la o las facturas que el mismo c
 .. image:: img/cheques/08_ejemplo_pago_con_cheque.png
    :width: 750 px
 
+Imprimir comprobante de recibo/pago
+___________________________________
 
-Configuración
-_____________
+Es usual que se desee imprimir el comprobante del recibo o pago que se confeccionó. Para realizar dicha tarea, se debe seleccionar la o los comprobantes y clickear en el botón Report.
 
- * Secuencia de pago: Se debe cargar previamente la secuencia de Pago en el año Fiscal.
- * Secuencia de recibo: Se debe cargar previamente la secuencia de Recibo en el año Fiscal.
-
+.. image:: img/voucher_recibo.png
+   :width: 750 px
 
 Cheques
 -------
