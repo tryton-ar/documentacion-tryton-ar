@@ -193,10 +193,10 @@ Asientos
 ---------
 En construcción
 
-Informes
-----------
+Informes Contabilidad Argentina
+-------------------------------
 
-Se han creado algunos informes que sean de utilidad para la liquidación de impuestos en el sistema contable Argentino.
+Se han creado algunos informes adecuados a la contabilidad de Argentina, para que sean de utilidad para la liquidación de impuestos.
 
 Cuenta corriente de una entidad
 -------------------------------
@@ -212,17 +212,37 @@ Se debe seleccionar la entidad en el listado de entidades, luego clickear en Rel
 .. image:: img/entidad_cuenta_corriente.png
    :width: 750 px
 
+Subdiarios
+__________
+
+Una de las necesidades a la hora de hacer la liquidación de impuestos son los informes de IVA Ventas / IVA Compras.
+La comunidad de Tryton Argentina, desarrolló unos informes que exportan esta información para poder ser leido por un programa de Hoja de Cálculo.
+
+Para acceder a los informes debe ir a *Contabilidad -> Informes -> Subdiario*
+
 Subdiario de Ventas
 ___________________
 
 Informe detallado de las ventas realizadas desglosado por impuestos.
+Para acceder a los informes debe ir a *Contabilidad -> Informes -> Subdiario -> Subdiario de Ventas*
+Podrá encontrar 3 tipos de informes:
+
+ * Ventas totales
+ * Ventas agrupado por tipo de comprobante
+ * Ventas agrupado por jurisdicción.
 
 Subdiario de Compras
 ____________________
 
 Informe detallado de las compras realizadas desglosado por impuestos.
+Para acceder a los informes debe ir a *Contabilidad -> Informes -> Subdiario -> Subdiario de Compras*
 
 RG 3885 (ex CITI)
 _________________
 
 Exporta archivos TXT para hacer la presentación de las operaciones de compra / venta.
+El asistente para exportar los archivos se accede desde *Contabilidad -> Informes -> Informativo Compras y Ventas RG 3885*
+
+La posibles al ejecutar el asistente son el periodo (año/mes) y si desea en formato CSV o no.
+
+.. note:: La opción *formato CSV* esta pensada para que el archivo que genera sea *leído* por una persona humana y abierto por un programa como Calc (libreoffice). Pero para hacer la importación en el módulo Compras y Ventas del SIAP, esa opción debe estar destildada.
