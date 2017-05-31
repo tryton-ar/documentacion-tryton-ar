@@ -201,7 +201,7 @@ Informes Contabilidad Argentina
 Se han creado algunos informes adecuados a la contabilidad de Argentina, para que sean de utilidad para la liquidación de impuestos.
 
 Cuenta corriente de una entidad
--------------------------------
+_______________________________
 
 Informe que muestra un resumen de cuenta cronológico de las facturación relacionada
 a una entidad con sus pagos o cobros
