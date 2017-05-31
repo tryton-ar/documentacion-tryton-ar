@@ -12,7 +12,9 @@ Para abrir un ejercicio fiscal debemos dirigirnos al menú Contabilidad / Config
 
 .. note:: Normalmente, solemos poner el año al que corresponde el ejercicio fiscal en Nombre y en Fecha inicial y Fecha final, la fecha de inicio y fin del año natural.
 
-En la pestaña Secuencias deberemos introducir la secuencia que queramos que se utilice para los asientos y las distintas facturas confirmadas del periodo fiscal. Podemos elegir una secuencia creada previamente o crear una clicando sobre el icono Nuevo (Crear una secuencia). Es imprescindible a nivel contable que la secuencia no se repita entre distintos ejercicios fiscales, por lo que, para cada uno de los distintos ejercicios que vayamos abriendo a lo largo del tiempo, deberemos crear nuevas secuencias.
+En la pestaña Secuencias deberemos introducir la secuencia que queramos que se utilice para los asientos y las distintas facturas confirmadas del periodo fiscal. Podemos elegir una secuencia creada previamente o crear una clicando sobre el icono Nuevo (Crear una secuencia). Es imprescindible a nivel contable que la secuencia no se repita entre distintos ejercicios fiscales, por lo que, para cada uno de los distintos ejercicios que vayamos abriendo a lo largo del tiempo, deberemos crear nuevas secuencias. 
+
+.. note:: Para la secuencia de asientos contables es importante que configuremos una cantidad mínima de dígitos de relleno, ejemplo: 8.
 
 Las secuencias para las facturas de clientes y proveedor se crean utilizando la configuración del Punto de Ventas. Por defecto, en tryton, se asocian a un periodo fiscal, pero en la Argentina, las secuencias las asociaremos a un punto de venta y tipo de comprobante (ej: A, B, C, Nota de crédito, etc). En este caso, Tryton requerirá estas secuencias creadas en el sistema, pero no seran las utilizadas por la normativa de la Argentina (AFIP). Ver la documentación de Facturación para configurar el punto de venta con sus secuencias correspondientes.
 
@@ -246,3 +248,16 @@ El asistente para exportar los archivos se accede desde *Contabilidad -> Informe
 La posibles al ejecutar el asistente son el periodo (año/mes) y si desea en formato CSV o no.
 
 .. note:: La opción *formato CSV* esta pensada para que el archivo que genera sea *leído* por una persona humana y abierto por un programa como Calc (libreoffice). Pero para hacer la importación en el módulo Compras y Ventas del SIAP, esa opción debe estar destildada.
+
+Imprimir Libro Diario
+_____________________
+
+En la contabilidad Argentina es necesario imprimir el diario en un libro de actas. Para ello, se debe utilizar el informe que se invoca desde *Contabilidad -> Informes -> Imprimir libro diario*. Previamente, si es necesario, se pueden reenumerar los asientos contables especificando cual de ellos es el asiento de apertura (*Contabilidad -> Procesamiento -> Reenumer asientos*)
+
+.. note:: Recordad que es importante que configuremos una cantidad mínima de dígitos de relleno para la secuencia de asientos contables para el periodo en cuestión.
+
+.. image:: img/menu_reenumerar_asiento.png
+   :width: 750 px
+
+.. image:: img/asistente_reenumerar_asiento.png
+   :width: 750 px
