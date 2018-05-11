@@ -59,7 +59,7 @@ Luego iremos a ENTIDADES/CONFIGURACIÓN/ENTIDADES/NUEVO REGISTRO y haremos la ca
 
 -En "CONDICIÓN FRENTE AL IVA" se deberá elegir la opción "NO ALCANZADO". 
 
-.. image:: img/extranjeros1.png
+.. image:: img/extranjero1.png
    :width: 750 px
 
 -Mientras que en el campo "CUIT AFIP FOREIGN", deberemos completar con el Nº de CUIT especial que la AFIP designó a la entidad extranjera. Para ello, debemos ir a la solapa "IDENTIFICADORES", haremos click en "NUEVO REGISTRO" y cargaremos los datos de la siguiente manera:
