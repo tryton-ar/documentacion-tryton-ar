@@ -33,6 +33,47 @@ Desde el símbolo que es una flecha (ver imagen) se puede acceder a los registro
 Tryton maneja un completo árbol de categorías para poder realizar una correcta segmentación de los registros. 
 Al igual que en otros módulos se pueden realizar búsquedas por distintos filtros y extraer de forma sencilla los resultados de una búsqueda (copiar y pegar listado en una planilla de cálculo). 
 
+Carga de Entidades Extranjeras
+------------------------------
+La carga de entidades extranjeras se realiza primero ingresando en ENTIDADES/CONFIGURACIÓN/EMPRESAS/AFIP VAT COUNTRIES, donde cargaremos el Nº de CUIT especial que la AFIP designa a las entidades extranjeras. Dependiendo al país que pertenezcan tendrán un número determinado que puede verificarse en la web de la AFIP.
+
+Ejemplos: 
+.. image:: img/extranjeros0.1.png
+   :width: 750 px 
+
+Debemos proceder haciendo click en "CREAR UN NUEVO REGISTRO".
+
+.. image:: img/extranjeros0.2.png
+   :width: 750 px
+
+Se abrirá una nueva ventana donde completaremos los siguientes campos:
+1) En "VAT Country" cargaremos el país correspondiente a la entiedad.
+2) En "VAT Number" irá el Nº de CUIT especial designado por la AFIP.
+3) Y en "Type Code", debemos elegir si se trata de una entidad FÍSICA, JURIDICA o DE OTRO TIPO.
+Finalizaremos guardando el registro. 
+
+.. image:: img/extranjeros0.3.png
+   :width: 750 px
+   
+Luego iremos a ENTIDADES/CONFIGURACIÓN/ENTIDADES/NUEVO REGISTRO y haremos la carga de la entidad extranjera completando los campos de forma similar a los casos de entidades comunes. Sólo debemos tener en cuenta dos particularidades:
+
+-En "CONDICIÓN FRENTE AL IVA" se deberá elegir la opción "NO ALCANZADO". 
+
+.. image:: img/extranjeros1.png
+   :width: 750 px
+
+-Mientras que en el campo "CUIT AFIP FOREIGN", deberemos completar con el Nº de CUIT especial que la AFIP designó a la entidad extranjera. Para ello, debemos ir a la solapa "IDENTIFICADORES", haremos click en "NUEVO REGISTRO" y cargaremos los datos de la siguiente manera:
+-Tipo: elegimos la opción "CUIT AFIP Foreign"
+-VAT Country: elegimos el país que corresponda.
+-Código: completamos con el Nº de CUIT especial designado por la AFIP al país que elegimos anteriormente. 
+
+.. image:: img/extranjero1.1.png
+   :width: 750 px
+
+.. image:: img/extranjero1.2.png
+   :width: 750 px
+
+
 Validar Datos en AFIP
 ---------------------
 
