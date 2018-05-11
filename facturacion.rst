@@ -52,10 +52,6 @@ Si el usuario tiene permiso, al igual que en los otros módulos de Tryton, el us
 
 Factura Electrónica
 -------------------
-En el caso de tratarse de una factura electrónica será necesario completar los datos que la AFIP solicita, es decir, ver si se trata de un Producto o Servicio y en este caso especificar las fechas del mismo. 
-
-.. image:: img/afipfactura.png
-   :width: 750 px
 
 Previamente a la carga de una factura "E" debemos ingresar en el módulo MONEDA/MONEDAS. Allí buscaremos las monedas correspondientes a la venta que estamos realizando y cargaremos las tasas de cambio.
 Ejemplo Dolar estadounidense-Peso argentino:
@@ -75,6 +71,12 @@ Ejemplo Dolar estadounidense-Peso argentino:
 De esta manera, los asientos contables quedan en pesos utilizando como dato de tasa de cambio lo que se configuró a la moneda peso argentino. La moneda referencia vale 1 y el peso lo que diga el mercado.
 
 Una vez configurada la moneda, procederemos a hacer la factura.
+
+En el caso de tratarse de una factura electrónica será necesario completar los datos que la AFIP solicita, es decir, ver si se trata de un Producto o Servicio y en este caso especificar las fechas del mismo. 
+
+.. image:: img/afipfactura.png
+   :width: 750 px
+
 
 IMPORTANTE
 Cuando hagamos una factura "E" a un cliente extranjero debemos completar correctamente los siguientes campos:
