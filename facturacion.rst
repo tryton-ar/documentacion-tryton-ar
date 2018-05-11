@@ -41,6 +41,95 @@ El template de facturas viene armado para tomar los datos que devuelve la AFIP e
 Para poder realizar la facturación es importante tener bien configurada la Empresa: cargar certificados de AFIP para la facturación electrónica, la condición ante el IVA y el CUIT y el logo de la misma (usado en la factura).
 También se deberá cargar de forma correcta el cliente (CUIT y tipo de IVA).
 
+Configuración de Punto de Venta Electrónico
+-------------------------------------------
+Para crear un punto de venta electrónico en la AFIP debemos utilizar el regímen de “Emisión de Comprobantes Electrónicos" (R.E.C.E.): el mismo permite autorizar Facturas A y B para Responsables Inscriptos mediante Web Services, aplicativo AFIP SIAP RECE o servicio por clave fiscal "Comprobantes en linea" (máximo 100 comprobantes). De esta manera, la gestión del CAE se hace en forma automatizada, es decir, el computador del contribuyente se comunica automáticamente con el servidor de AFIP, el que procesa la solicitud de autorización y comunica la aprobación (el CAE), por el mismo medio (Internet), y se integra también automáticamente al comprobante, que en ese momento queda válidamente emitido.
+
+Para configurar el punto de venta electrónico para el uso de nuestro ERP, debemos seguir los siguientes pasos:
+
+1) Ir a la página web de la AFIP.
+Y en "INGRESO CON CLAVE FISCAL", completar con nuestro Nº de CUIT y contraseña
+
+2) Iremos a "Administración de puntos de venta y domicilios"
+
+.. image:: img/pdv1.png
+   :width: 750 px
+   
+3) Seleccione el contribuyente con el que desea facturar electrónicamente
+
+.. image:: img/pdv2.png
+   :width: 750 px
+   
+4) Luego elija “A/B/M de puntos de venta”
+ 
+ .. image:: img/pdv3.png
+   :width: 750 px
+ 
+5) A continuación aparecerá una ventana emergente aclaratoria de los "Sistemas de Facturación Asociados a los Puntos de Ventas" que puede utilizar. En nuestro caso, debe ser "RECE para aplicativo y web services".
+ 
+ .. image:: img/pdv4.png
+   :width: 750 px
+   
+6) Luego hará click en "AGREGAR" y completará de la siguiente manera:
+-Número: 1001
+-Nombre fantasía: FACTURACIONWEB
+-Sistema: “RECE para aplicativo y web services o “Factura Electrónica - Monotributo - Web Services”
+-Nuevo domicilio: elija el correspondiente. 
+
+.. image:: img/pdv5.png
+   :width: 750 px
+   
+.. image:: img/pdv6.png
+   :width: 750 px
+   
+Y por último acepte y confirme las veces que sean necesarias.
+
+7) Ahora deberá "VINCULAR EL SERVICIO". Para ello, debe SALIR y volver a ingresar a la web de la AFIP. Haga click en "Administrador de Relaciones de Clave Fiscal".
+
+.. image:: img/pdv7.png
+   :width: 750 px
+   
+8) Seleccione el contribuyente con el que desea facturar electrónicamente
+
+.. image:: img/pdv8.png
+   :width: 750 px
+   
+9) Elija “Nueva Relación”
+
+.. image:: img/pdv9.png
+   :width: 750 px
+   
+10) Presione “Buscar”
+
+.. image:: img/pdv10.png
+   :width: 750 px
+   
+11) Seleccione el cuadro “AFIP” y luego seleccione la opción “WebServices”
+
+.. image:: img/pdv11.png
+   :width: 750 px
+   
+12) Busque y seleccione el cuadro “Facturación Electrónica”
+
+.. image:: img/pdv12.png
+   :width: 750 px
+   
+13) Seleccione “Buscar” en el renglón de "Representante"
+
+.. image:: img/pdv13.png
+   :width: 750 px
+   
+14) Coloque el Nº de CUIT de quien será su proveedor ante AFIP. Por último seleccione “Buscar”
+
+.. image:: img/pdv14.png
+   :width: 750 px
+   
+15) Luego acepte y confirme las veces que sean necesarias
+
+.. image:: img/pdv15.png
+   :width: 750 px
+
+
 Factura de cliente
 ------------------
 Una vez configurado un Punto de Venta se puede proceder a facturar. Para el caso de facturar de forma electrónica será necesario contar con acceso Internet.
