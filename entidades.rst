@@ -37,7 +37,8 @@ Carga de Entidades Extranjeras
 ------------------------------
 La carga de entidades extranjeras se realiza primero ingresando en ENTIDADES/CONFIGURACIÓN/EMPRESAS/AFIP VAT COUNTRIES, donde cargaremos el Nº de CUIT especial que la AFIP designa a las entidades extranjeras. Dependiendo al país que pertenezcan tendrán un número determinado que puede verificarse en la web de la AFIP.
 
-Ejemplos: 
+Ejemplos:
+
 .. image:: img/extranjeros0.1.png
    :width: 750 px 
 
