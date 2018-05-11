@@ -83,3 +83,45 @@ Se realizó la integración con el servicio de la AFIP que permite traer datos d
 .. image:: img/boton1.png
    :width: 750 px
 
+Para que este botón funcione y cargue de forma automática clientes y proveedores, debemos habilitar el "Padrón A4 de AFIP". Esto lo haremos desde la página web del organismo:
+
+1) Ingresar a "Administrador de Relaciones de Clave Fiscal" 
+
+.. image:: img/b1.png
+   :width: 750 px
+   
+2) Seleccione el contribuyente con el que desea facturar electrónicamente
+
+.. image:: img/b2.png
+   :width: 750 px
+   
+3) Elija “Nueva Relación”
+
+.. image:: img/b3.png
+   :width: 750 px
+   
+4) Presione “Buscar”
+
+.. image:: img/b4.png
+   :width: 750 px
+   
+5) Seleccione el cuadro “AFIP” y luego seleccione la opción “WebServices”
+
+.. image:: img/b5.png
+   :width: 750 px
+   
+6) Busque y seleccione el cuadro “Servicio consulta padrón A4”
+
+.. image:: img/b6.png
+   :width: 750 px
+   
+7) Seleccione “Buscar” en el renglón de "Representante"
+
+.. image:: img/b7.png
+   :width: 750 px
+   
+8) Seleccione el "Alias" correspondiente al certificado digital que usa para facturación electrónica y coloque el Nº de CUIT de quien será su proveedor ante AFIP. Por último seleccione “BUSCAR”.
+
+.. image:: img/b8.png
+   :width: 750 px
+   
