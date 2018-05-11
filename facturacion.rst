@@ -47,10 +47,9 @@ Para crear un punto de venta electrónico en la AFIP debemos utilizar el regíme
 
 Para configurar el punto de venta electrónico para el uso de nuestro ERP, debemos seguir los siguientes pasos:
 
-1) Ir a la página web de la AFIP.
-Y en "INGRESO CON CLAVE FISCAL", completar con nuestro Nº de CUIT y contraseña
+1) Ir a la página web de la AFIP. En "INGRESO CON CLAVE FISCAL", completar con nuestro Nº de CUIT y contraseña
 
-2) Iremos a "Administración de puntos de venta y domicilios"
+2) Luego, iremos a "Administración de puntos de venta y domicilios"
 
 .. image:: img/pdv1.png
    :width: 750 px
@@ -71,10 +70,10 @@ Y en "INGRESO CON CLAVE FISCAL", completar con nuestro Nº de CUIT y contraseña
    :width: 750 px
    
 6) Luego hará click en "AGREGAR" y completará de la siguiente manera:
--Número: 1001
--Nombre fantasía: FACTURACIONWEB
--Sistema: “RECE para aplicativo y web services o “Factura Electrónica - Monotributo - Web Services”
--Nuevo domicilio: elija el correspondiente. 
+*Número: 1001
+*Nombre fantasía: FACTURACIONWEB
+*Sistema: “RECE para aplicativo y web services o “Factura Electrónica - Monotributo - Web Services”
+*Nuevo domicilio: elija el correspondiente. 
 
 .. image:: img/pdv5.png
    :width: 750 px
