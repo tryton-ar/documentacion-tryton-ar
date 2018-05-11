@@ -120,7 +120,8 @@ Para que este botón funcione y cargue de forma automática clientes y proveedor
 .. image:: img/b7.png
    :width: 750 px
    
-8) Seleccione el "Alias" correspondiente al certificado digital que usa para facturación electrónica y coloque el Nº de CUIT de quien será su proveedor ante AFIP. Por último seleccione “BUSCAR”.
+8) Seleccione el "Alias" correspondiente al certificado digital que usa para facturación electrónica y coloque el Nº de CUIT de quien será su proveedor ante AFIP. Por último seleccione “Buscar”. 
+Luego acepte y confirme las veces que sean necesarias.
 
 .. image:: img/b8.png
    :width: 750 px
