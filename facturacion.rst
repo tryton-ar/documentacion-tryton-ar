@@ -53,8 +53,44 @@ Si el usuario tiene permiso, al igual que en los otros módulos de Tryton, el us
 Factura Electrónica
 -------------------
 En el caso de tratarse de una factura electrónica será necesario completar los datos que la AFIP solicita, es decir, ver si se trata de un Producto o Servicio y en este caso especificar las fechas del mismo. 
- 
+
 .. image:: img/afipfactura.png
+   :width: 750 px
+
+Previamente a la carga de una factura "E" debemos ingresar en el módulo MONEDA/MONEDAS. Allí buscaremos las monedas correspondientes a la venta que estamos realizando y cargaremos las tasas de cambio.
+Ejemplo Dolar estadounidense-Peso argentino:
+
+.. image:: img/moneda1.png
+   :width: 750 px
+
+.. image:: img/moneda2.png
+   :width: 750 px
+
+.. image:: img/moneda3.png
+   :width: 750 px
+
+.. image:: img/moneda4.png
+   :width: 750 px
+
+De esta manera, los asientos contables quedan en pesos utilizando como dato de tasa de cambio lo que se configuró a la moneda peso argentino. La moneda referencia vale 1 y el peso lo que diga el mercado.
+
+Una vez configurada la moneda, procederemos a hacer la factura.
+
+IMPORTANTE
+Cuando hagamos una factura "E" a un cliente extranjero debemos completar correctamente los siguientes campos:
+
+-En PUNTO DE VENTA: se deberá elegir "3-Electronic", es decir, el utilizado para los casos de exportación.
+-En "MONEDA", completaremos el cambio acordado con el comprador. Ej. Dólar estadounidense, Real, Boliviano, Euro, etc.
+
+.. image:: img/extranjero2.png
+   :width: 750 px
+   
+.. image:: img/extranjero2.png
+   :width: 750 px
+   
+-Y en la solapa FACTURA ELECTRÓNICA INCOTERMS: se debe elegir la opción "FREE ON BOARD".
+
+.. image:: img/extranjero2.png
    :width: 750 px
 
 En el sector de transacciones se podrán ver los mensajes de las comunicaciones realizadas con la AFIP. 
