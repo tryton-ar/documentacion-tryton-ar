@@ -78,4 +78,8 @@ Luego iremos a ENTIDADES/CONFIGURACIÓN/ENTIDADES/NUEVO REGISTRO y haremos la ca
 Validar Datos en AFIP
 ---------------------
 
-Se realizó la integración con el servicio de la AFIP que permite traer datos de la Entidad de forma automática. Al poner el número de CUIT y presionar el botón AFIP el sistema consulta en el momento el webservices de la AFIP y trae los datos que la misma informa.  
+Se realizó la integración con el servicio de la AFIP que permite traer datos de la Entidad de forma automática. Al poner el número de CUIT y presionar el botón AFIP el sistema consulta en el momento el webservices de la AFIP y trae los datos que la misma informa.
+
+.. image:: img/boton1.png
+   :width: 750 px
+
