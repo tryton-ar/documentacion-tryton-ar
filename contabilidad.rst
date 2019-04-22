@@ -187,9 +187,38 @@ En este sector podrá consignar los cheques emitidos señalando el estado del mi
 Terceros
 ________
 En este sector podrá consignar los cheques recibidos de tercero, señalando el estado del mismo. Estos cheques podrán ser utilizados o cargados desde Recibos. 
+Los cheques de terceros tienen los estados borrador, cartera, depositado. Cuando se carga el cheque
+desde un recibo pasa a estado en cartera directamente. Si se carga desde Tesorería,
+debe ejecutar el asistente para pasar el o los cheques a cartera. Cuando el cheque se
+deposite, debe ejecutar el asistente Depositar, para pasar el cheque a estado depositado.
 
 .. image:: img/cheques/06_formulario_cheque_tercero.png
    :width: 750 px
+
+Manejo de cheques rechazados
+____________________________
+
+# Si el cheque esta depositado se revierte el deposito para dejarlo en
+cartera con la funcionalidad actual.
+## Banco al haber
+## Cheques recibidos al debe
+
+# Estando en cartera se hace un asiento manual y se pone el cheque en
+estado rechazado.
+## Cheque Rechazado al debe
+## Cheques recibidos al haber
+
+# Se hace una ND manual por el importe del cheque, donde en la linea de
+la factura se indica la cuenta CHEQUE Rechazado y esto genera el asiento
+contable:
+## Venta al debe (cuenta de activo)
+## Cheque Rechazado al haber (cuenta de activo) para no enviar dos
+veces la venta a resultados porque no es una nueva venta.
+
+# Luego cdo se cobra esta ND se genera un recibo nuevo con el asiento
+contable:
+## Venta al haber
+## Cheque recibido al debe (o la cuenta del cobro que se use)
 
 Asientos
 ---------
