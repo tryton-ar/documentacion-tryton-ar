@@ -268,11 +268,11 @@ ____________________
 Informe detallado de las compras realizadas desglosado por impuestos.
 Para acceder a los informes debe ir a *Contabilidad -> Informes -> Subdiario -> Subdiario de Compras*
 
-RG 3885 (ex CITI)
+RG 3685 (ex CITI)
 _________________
 
 Exporta archivos TXT para hacer la presentación de las operaciones de compra / venta.
-El asistente para exportar los archivos se accede desde *Contabilidad -> Informes -> Informativo Compras y Ventas RG 3885*
+El asistente para exportar los archivos se accede desde *Contabilidad -> Informes -> Informativo Compras y Ventas RG 3685*
 
 La posibles al ejecutar el asistente son el periodo (año/mes) y si desea en formato CSV o no.
 
