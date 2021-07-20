@@ -5,6 +5,7 @@ Ejecicio Fiscal
 ----------------
 
 Abrir ejercicio fiscal
+----------------------
 
 El ejercicio fiscal, que por regla general suele coincidir con el año natural, tiene como función acotar el inicio y cierre de los diferentes libros que vamos a utilizar. Además limita temporalmente las anotaciones contables que podamos introducir en el sistema, de manera que hasta que no se abra el ejercicio fiscal (y los correspondientes periodos) no se podrá confirmar ninguna factura (ni ningún asiento contable) fechada en ese año. Por ejemplo, no se podrá confirmar ninguna factura fechada en el 2015 hasta que no se abra un ejercicio fiscal con Fecha inicial 01/01/2015 y Fecha final 31/12/2015.
 
@@ -26,8 +27,49 @@ Finalmente, una vez introducidos los parámetros generales y las secuencias, pod
 
 Si esta configurando el ejercicio fiscal por primera vez, le recomendamos ver la página de *Puesta en Marcha*.
 
+git@github.com:tryton-ar/documentacion-tryton-ar.git
+
+Cierre del ejercicio fiscal
+---------------------------
+
+El cierre de un ejercicio fiscal suele constar del asiento de regularización, el asiento de cierre, el de apertura del ejercicio nuevo, así como el bloqueo para no permitir la contabilización de nuevos datos en el ejercicio cerrado. En Tryton solamente vamos a realizar la primera y la última acción: el asiento de regularización y el bloqueo del ejercicio pero los asientos de cierre y apertura no son necesarios en el sistema, puesto que Tryton arrastrará los saldos de las cuentas al ejercicio siguiente y una vez cerrado el ejercicio, no arrastrará los saldos de las cuentas de ingresos y gastos si estas están bien configuradas.
+
+Hay que tener en cuenta que sí que se van a arrastrar los saldos de las cuentas de ingresos y gastos mientras no se haya cerrado el año, puesto que el sistema intenta garantizar que el balance de situación está siempre balanceado.
+
+Para realizar el cierre del ejercicio fiscal seguiremos estos pasos:
+
+Paso 1
+______
+
+Haremos un asiento de pérdidas y ganancias (o de regularización). Ejecutaremos el asistente des del menú "Contabilidad/Procesos/Crear asiento de regularización" que nos pedirá:
+
+* Ejercicio fiscal a cerrar.
+* Diario. El diario debe ser del tipo "Situación" (seguramente se deberá crear la primera vez).
+* Período donde se realizará el asiento de pérdida/ganancias. El período debe ser de tipo "Ajuste", que normalmente es un período de un solo día (por ejemplo 31-12-2014).
+* Cuenta haber/debe dónde se realizarán las ganancias o pérdidas (normalmente a la cuenta 129000-Resultado del ejercicio).
+
+Paso 2
+______
+
+Renumerar los asientos para que sean correlativos. Con el módulo "Renumeración movimientos" (Account Move Renumber) dispondremos del menú "Contabilidad/Procesos/Renumerar asientos". Este asistente nos pedirá:
+
+* Ejercicio fiscal
+* Primer número a renumerar
+
+En caso de que todos los asientos del ejercicio no estén confirmados nos avisará que los debemos confirmar.
+
+.. note:: Para confirmar todos los asientos iremos a "Contabilidad/Asientos/Asientos contables", filtraremos los que sean en borrador y los confirmaremos.
+
+Paso 3
+______
+
+Cierre del ejercicio fiscal. Ejecutaremos el asistente del menú "Contabilidad/Procesos/Cierre ejercicio fiscal" y nos pedirá el ejercicio fiscal a cerrar. Nos anotará los saldos de las cuentas a finales del ejercicio y nos cerrará los períodos y el ejercicio.
+
+.. note:: No se genera asientos de cierre y apertura, ya que no son necesarios, pues ya se considera de forma automática los saldos de cierre como saldos iniciales para el siguiente ejercicio.
+
 Planes Contables
 ----------------
+
 Los planes contables son editables según como lo desee el usuario. Tryton viene con un Plan Mínimo por defecto y en Argentina se desarrolló un Plan Base de empresas de servicio. A las cuentas marcadas como de Tipo Vista no se les puede generar imputaciones, sino que sirven de ordenamiento y se les puede cargar cuentas hijos.  
 
 Cuentas Contables
