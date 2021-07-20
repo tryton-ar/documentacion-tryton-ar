@@ -27,8 +27,6 @@ Finalmente, una vez introducidos los parámetros generales y las secuencias, pod
 
 Si esta configurando el ejercicio fiscal por primera vez, le recomendamos ver la página de *Puesta en Marcha*.
 
-git@github.com:tryton-ar/documentacion-tryton-ar.git
-
 Cierre del ejercicio fiscal
 ---------------------------
 
